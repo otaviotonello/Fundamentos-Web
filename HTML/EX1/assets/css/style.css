@@ -1,0 +1,74 @@
+/*PRINCIPAL*/
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: rgb(255, 245, 245);
+}
+
+.titulo-principal {
+    text-align: center;
+    font-family: DejaVu Sans Mono, monospace;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 1.5;
+    text-transform: uppercase;
+    color: rgb(231, 26, 26);
+    text-shadow: 2px 1px 3px rgb(243, 76, 76);
+}
+
+.subtitulo-principal {
+    text-align: center;
+    font-family: DejaVu Sans Mono, monospace;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 1.5;
+    text-transform: uppercase;
+    text-shadow: 2px 1px 4px rgb(0, 0, 0);
+}
+
+/*MENU*/
+.div-menu{
+    display: flex;
+    justify-content: center;
+}
+
+#menu li{
+    display: inline;
+    padding: 15px;
+}
+
+#menu li a {
+    text-decoration: none;
+    color: black;
+}
+
+#menu li a:hover {
+    color: rgb(177, 0, 0);
+}
+
+/*TEXTOS*/
+.materia-1{
+    padding: 20px;
+}
+
+.center {
+    text-align: center;
+}
+
+.container-1 {
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+}
+
+/*ABA SUGESTÃO*/
+.container-2 {
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.ml-50 {
+    margin-left: 50px;
+}
