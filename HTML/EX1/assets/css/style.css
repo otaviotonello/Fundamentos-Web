@@ -3,7 +3,6 @@ body {
     font-family: 'Roboto', sans-serif;
     background-color: rgb(255, 245, 245);
 }
-
 .titulo-principal {
     text-align: center;
     font-family: DejaVu Sans Mono, monospace;
@@ -22,18 +21,41 @@ body {
     font-weight: bold;
     line-height: 1.5;
     text-transform: uppercase;
-    text-shadow: 2px 1px 4px rgb(0, 0, 0);
+
 }
 
 /*MENU*/
-.div-menu{
+
+.contribue {
+    text-align: right;
+    justify-content: right;
     display: flex;
+    list-style-type: none;
+    padding: 2px 5px 0px;
+}
+
+.contribue li a {
+    text-decoration: none;
+    color: rgb(177, 0, 0);
+}
+
+.contribue li a:hover {
+    color: rgb(0, 0, 0);
+}
+
+.div-menu{
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    width: 100%;
     justify-content: center;
+    margin-right: 40px;
 }
 
 #menu li{
     display: inline;
-    padding: 15px;
+    padding: 0px 10px;
 }
 
 #menu li a {
@@ -50,6 +72,11 @@ body {
     padding: 20px;
 }
 
+.texto-1{
+    margin-right: 30px;
+
+}
+
 .center {
     text-align: center;
 }
@@ -59,6 +86,7 @@ body {
     flex-flow: row;
     justify-content: center;
     align-items: center;
+    text-align: justify;
 }
 
 /*ABA SUGESTÃO*/
