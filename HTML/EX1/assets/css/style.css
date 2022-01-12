@@ -43,10 +43,21 @@ body {
     color: rgb(0, 0, 0);
 }
 
-.div-menu{
-    display: flex;
-    align-items: center;
+.div-menu {
+    text-align: right;
     justify-content: center;
+    display: flex;
+    list-style-type: none;
+    padding: 2px 5px 0px;
+}
+
+.div-menu li a {
+    text-decoration: none;
+    color: rgb(177, 0, 0);
+}
+
+.div-menu li a:hover {
+    color: rgb(0, 0, 0);
 }
 
 #menu li{
