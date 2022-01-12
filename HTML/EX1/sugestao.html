@@ -32,21 +32,22 @@
 
     <div class="container-2">
         <div>
-            <fomr>
-                <label for="Nome">Nome</label> <br>
-                <input type="text" id="nome">
+            <form>
+                <label for="nome">Nome:</label> <br>
+                <input type="text" id="nome" onkeyup='validaNome()'>
+                <div id='txtNome'></div>
+                <br>
+                <label for="email">E-mail:</label> <br>
+                <input type="email" id="email" onkeyup='validaEmail()'>
+                <div id='txtEmail'></div>
+                <br>
+                <label for="assunto">Assunto:</label> <br>
+                <textarea name="assunto" id="assunto" cols="60" rows="5" onkeyup="validaAssunto()"></textarea>
+                <div id='txtAssunto'></div>
                 <br>
                 <br>
-                <label for="Email">Email</label> <br>
-                <input type="email" id="email">
-                <br>
-                <br>
-                <label for="Assunto">Assunto</label><br>
-                <textarea name="assunto" id="assunto" cols="60" rows="5"></textarea>
-                <br>
-                <br>
-                <button>Enviar</button>
-            </fomr>
+                <button onclick="enviar()" >Enviar</button>
+             </form>
         </div>
 
         <div class="ml-50">
@@ -54,7 +55,7 @@
             <p>Quicken Loans Arena</p>
             <p>1 Center Court, Cleveland, Ohio.</p>
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2988.356375451408!2d-81.69024608519909!3d41.49655139718461!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8830fa81ba7c99b5%3A0x53fafe5c51529920!2sQuicken%20Loans%20Arena!5e0!3m2!1spt-BR!2sbr!4v1641823665421!5m2!1spt-BR!2sbr" 
-            width="350" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            width="350" height="250" style="border:0;" allowfullscreen="" loading="lazy" id='mapa' onmousemove="mapaZoom()" onmouseout="mapaNormal()"></iframe>
         </div>
     </div>
 
@@ -64,6 +65,8 @@
            Todos os direitos reservados à empresa Cleveland Cavaliers NBA &copy
        </p>
     </footer>
+
+    <script src="assets/js/script.js"></script>
 
 </body>
 </html>
